@@ -1,0 +1,182 @@
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
+
+/* colors
+
+White : #FCF6F5FF
+Pink Lady : #EDC2D8FF
+Sky Blue : #8ABAD3FF
+
+*/
+
+.container-fluid {
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h2 {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    font-weight: 500;
+    font-size: 4rem;
+    margin-bottom: 1em;
+    margin: 3rem 0;
+}
+
+header {
+    text-align: center;
+    color: #fcf6f5ff;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-image: url(img/1back.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 3rem 0;
+}
+
+/* main */
+section {
+    padding: 2em 0 2em 0;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-container {
+    padding: 0 1em;
+}
+
+#intro {
+    background-color: white;
+}
+
+#spitfire {
+    background: linear-gradient(white, #8abad3ff);
+}
+
+#worlds {
+    background: linear-gradient(#8abad3ff, #edc2d8ff);
+}
+
+#virtual-self {
+    background: linear-gradient(#edc2d8ff, white);
+}
+
+#releases {
+    background-color: white;
+    padding-bottom: 0;
+}
+
+.wrapper-releases {
+    display: flex;
+    flex-direction: column;
+}
+
+.release {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em 1.5em;
+}
+
+.release-logo {
+    max-width: 100%;
+    width: 500px;
+    height: 500px;
+    margin-bottom: 1em;
+}
+
+.worlds {
+    background: linear-gradient(#8abad3ff, #edc2d8ff);
+}
+
+.virtual-self {
+    background: linear-gradient(black 50%, #333399, #6699cc, #8abad3ff);
+    color: white;
+}
+
+#latest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: black;
+    color: white;
+}
+#latest h2 {
+    margin-bottom: 1em;
+}
+
+.comment {
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+iframe {
+    margin: 2em 0;
+}
+
+/* footer */
+
+/* media */
+@media (min-width: 768px) {
+    .wrapper {
+        align-items: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+
+    .wrapper img {
+        max-width: 45%;
+    }
+    .even {
+        flex-direction: row-reverse;
+    }
+
+    .wrapper-releases {
+        flex-direction: row;
+    }
+    .virtual-self,
+    .worlds {
+        width: 50%;
+    }
+}
